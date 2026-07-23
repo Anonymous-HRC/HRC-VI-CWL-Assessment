@@ -71,66 +71,6 @@
         </div>
       </section>
 
-      <section id="framework">
-        <h2>Framework Overview</h2>
-        <p>
-          The system integrates scene perception, action state estimation, and
-          visual-action attention modeling. The goal is to estimate workload from
-          observable task behavior while preserving a compact and interpretable
-          pipeline for peer review.
-        </p>
-        <figure class="figure-card">
-          <img
-            src="assets/figures/framework-overview.svg"
-            alt="Overview of the vision-based cognitive workload assessment framework."
-          />
-          <figcaption>
-            Overall framework. RGB-D observations are processed into human,
-            object, robot, and task-state representations, which are fused by an
-            attention module to estimate cognitive workload.
-          </figcaption>
-        </figure>
-
-        <div class="tabs" data-tabs>
-          <div class="tab-list" role="tablist" aria-label="Framework views">
-            <button class="tab-trigger active" type="button" data-tab="pipeline">
-              System pipeline
-            </button>
-            <button class="tab-trigger" type="button" data-tab="attention">
-              Visual-action attention
-            </button>
-            <button class="tab-trigger" type="button" data-tab="outputs">
-              Assessment outputs
-            </button>
-          </div>
-          <div class="tab-panel active" data-panel="pipeline">
-            <img
-              src="assets/figures/system-pipeline.svg"
-              alt="System pipeline for perception, feature extraction, temporal modeling, and workload estimation."
-            />
-          </div>
-          <div class="tab-panel" data-panel="attention">
-            <p>
-              Visual-action attention links where the operator looks, which
-              object is currently relevant, and how robot assistance changes
-              task demand. The attention map is treated as a time-varying
-              distribution over action-relevant regions.
-            </p>
-            <p>
-              This view is intended for supplementary explanation of the model
-              concept rather than as an additional claim beyond the manuscript.
-            </p>
-          </div>
-          <div class="tab-panel" data-panel="outputs">
-            <p>
-              Outputs include normalized workload estimates, stage-level
-              workload summaries, and attention-based diagnostic indicators for
-              different collaborative assembly conditions.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section id="methodology">
         <h2>Methodology</h2>
         <p>
