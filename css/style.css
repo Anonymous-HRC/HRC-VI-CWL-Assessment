@@ -176,6 +176,22 @@ main {
   margin-top: 0;
 }
 
+.overview-band {
+  width: 100%;
+  margin-top: 1.5rem;
+  background: var(--soft);
+}
+
+.overview-content {
+  width: min(var(--content-width), calc(100% - 3rem));
+  margin-inline: auto;
+  padding: 2rem 0;
+}
+
+.overview-content h2 {
+  margin-top: 0;
+}
+
 .figure-card {
   margin: 1.5rem 0 2rem;
 }
@@ -287,6 +303,7 @@ footer {
   }
 
   .highlighted,
+  .overview-content,
   .tab-panel {
     padding: 1rem;
   }
