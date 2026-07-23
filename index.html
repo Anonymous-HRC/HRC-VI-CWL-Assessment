@@ -131,32 +131,140 @@
       <section id="methodology">
         <h2>Methodology</h2>
         <p>
-          Let \(x_t\) denote the visual observation at time \(t\), \(a_t\) the
-          estimated human action state, and \(r_t\) the robot/task context. The
-          workload estimator maps temporal observations to a normalized score:
+          The framework estimates cognitive workload in human-robot
+          collaborative assembly by integrating attention orientation,
+          behavioral engagement, context-aware attention switching, and
+          robot-interaction hesitation.
+        </p>
+
+        <h3>1. Visual-Attentional and Behavioral State Representation</h3>
+        <p>
+          The framework jointly considers where the operator attends and how
+          the operator behaves during collaboration.
         </p>
         <p class="math-block">
           \[
-          \hat{w}_t = f_\theta\left(\phi_v(x_t), \phi_a(a_t), \phi_r(r_t), h_{t-1}\right)
+          \mathbf{o}(t)=\left\{\boldsymbol{\theta}_{h}(t),\mathbf{u}_{b}(t),\mathbf{x}_{m}(t),\mathcal{R}\right\}
+          \]
+        </p>
+        <p>where:</p>
+        <ul>
+          <li>\(\boldsymbol{\theta}_{h}(t)\): head orientation representing attention direction.</li>
+          <li>\(\mathbf{u}_{b}(t)\): upper-body posture describing behavioral engagement.</li>
+          <li>\(\mathbf{x}_{m}(t)\): hand movement representing manipulation behavior.</li>
+          <li>\(\mathcal{R}\): task-related areas of interest.</li>
+        </ul>
+        <p>
+          This representation extends conventional gaze-based assessment by
+          incorporating both attention orientation and physical behavior.
+        </p>
+
+        <h3>2. Task-related Attention Demand</h3>
+        <p>
+          The allocation of attention across different task regions is
+          quantified as:
+        </p>
+        <p class="math-block">
+          \[
+          A_k(t)=\frac{1}{t}\int_0^t p_k(u)v(u)\,du
           \]
         </p>
         <p>
-          Attention-based indicators are computed over task-relevant regions
-          \(\mathcal{R}\). A compact metric for visual concentration is:
+          where \(p_k(u)\) indicates the attention state associated with AOI
+          \(k\), and \(v(u)\) denotes valid attention observations.
         </p>
+        <p>The formulation describes:</p>
+        <ul>
+          <li>AED: Assembly Execution Demand.</li>
+          <li>ICD: Instruction Checking Demand.</li>
+          <li>TID: Tool/Part Identification Demand.</li>
+          <li>CD: Robot Collaboration Demand.</li>
+        </ul>
+        <p>
+          Higher values indicate greater attention allocation toward the
+          corresponding task requirement.
+        </p>
+
+        <h3>3. Context-aware Attention Switching Demand</h3>
+        <p>
+          Attention switching introduces additional cognitive demand in HRC
+          because operators must redirect attention between task execution,
+          information processing, and robot interaction.
+        </p>
+        <p>The switching cost is defined as:</p>
         <p class="math-block">
           \[
-          C_t = \sum_{i \in \mathcal{R}} \alpha_{t,i} \log\left(\alpha_{t,i} + \epsilon\right)
+          c(a,b)=
+          \begin{cases}
+          0,&a=b\\
+          c_{\mathrm{high}},&\{a,b\}=\{\mathrm{ICD},\mathrm{AED}\}\\
+          c_{\mathrm{int}},&\{a,b\}=\{\mathrm{CD},\mathrm{TID}\}\\
+          c_{\mathrm{base}},&\text{otherwise}
+          \end{cases}
+          \]
+        </p>
+        <p>The context-aware switching demand is:</p>
+        <p class="math-block">
+          \[
+          ASD_{ctx}(t)=1-\exp\left(-\frac{C_{sw}(t)}{t}\right)
           \]
         </p>
         <p>
-          The final cognitive workload estimate combines temporal task demand,
-          attention dispersion, action uncertainty, and interaction timing:
+          Higher values indicate more frequent or more cognitively demanding
+          attention reallocation.
+        </p>
+
+        <h3>4. Operation Hesitation Demand</h3>
+        <p>
+          During robot collaboration, operators may temporarily reduce hand
+          movement due to waiting, uncertainty, or coordination requirements.
         </p>
         <p class="math-block">
           \[
-          W = \lambda_1 D + \lambda_2 U + \lambda_3 A + \lambda_4 T
+          OHD(t)=\frac{T_{hes}(t)}{T_{collab}(t)}
           \]
+        </p>
+        <p>
+          where \(T_{hes}(t)\) represents hesitation duration and
+          \(T_{collab}(t)\) represents valid robot collaboration duration.
+          Higher OHD indicates increased interaction-related coordination
+          difficulty.
+        </p>
+
+        <h3>Summary</h3>
+        <p>
+          The model characterizes cognitive workload through four complementary
+          dimensions:
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Component</th>
+              <th>Cognitive Demand Captured</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Visual-attentional and behavioral representation</td>
+              <td>Attention orientation and behavioral engagement.</td>
+            </tr>
+            <tr>
+              <td>Task-related attention demand</td>
+              <td>Allocation of attention resources.</td>
+            </tr>
+            <tr>
+              <td>Context-aware attention switching demand</td>
+              <td>Cognitive cost of attention reorientation.</td>
+            </tr>
+            <tr>
+              <td>Operation hesitation demand</td>
+              <td>Behavioral adaptation during robot interaction.</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          Together, these components provide an interpretable representation of
+          cognitive workload in human-robot collaborative assembly.
         </p>
       </section>
 
