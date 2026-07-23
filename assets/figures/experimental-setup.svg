@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" role="img" aria-labelledby="title desc">
+  <title id="title">Experimental setup</title>
+  <desc id="desc">Anonymous diagram of UR5e robot, RGB-D camera, human operator, and gearbox assembly workspace.</desc>
+  <rect width="920" height="460" rx="24" fill="#f4f4f5"/>
+  <g font-family="Arial, sans-serif">
+    <text x="460" y="54" text-anchor="middle" font-size="26" font-weight="700" fill="#27272a">Experimental Setup</text>
+    <rect x="110" y="260" width="700" height="80" rx="12" fill="#e4e4e7"/>
+    <rect x="185" y="220" width="160" height="40" rx="8" fill="#bfdbfe"/>
+    <text x="265" y="247" text-anchor="middle" font-size="15" font-weight="700" fill="#1e3a8a">Gearbox station</text>
+    <circle cx="670" cy="185" r="34" fill="#dbeafe" stroke="#60a5fa" stroke-width="3"/>
+    <path d="M670 219v95M635 255h70M648 314l-42 50M692 314l42 50" stroke="#1e3a8a" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <text x="670" y="397" text-anchor="middle" font-size="15" fill="#52525b">Human operator</text>
+    <rect x="132" y="118" width="86" height="44" rx="10" fill="#27272a"/>
+    <path d="M175 162v72" stroke="#27272a" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="260" cy="168" r="26" fill="#93c5fd"/>
+    <path d="M218 172h42M260 168l58 72M318 240h78" stroke="#2563eb" stroke-width="13" fill="none" stroke-linecap="round"/>
+    <text x="235" y="105" text-anchor="middle" font-size="15" fill="#52525b">UR5e robot</text>
+    <rect x="520" y="96" width="92" height="44" rx="10" fill="#ffffff" stroke="#a1a1aa" stroke-width="2"/>
+    <circle cx="548" cy="118" r="10" fill="#60a5fa"/>
+    <circle cx="584" cy="118" r="10" fill="#60a5fa"/>
+    <path d="M566 140v65" stroke="#a1a1aa" stroke-width="6" stroke-linecap="round"/>
+    <text x="566" y="82" text-anchor="middle" font-size="15" fill="#52525b">RGB-D camera</text>
+    <path d="M548 142L320 238M584 142L675 222" stroke="#93c5fd" stroke-width="3" stroke-dasharray="8 8" fill="none"/>
+  </g>
+</svg>

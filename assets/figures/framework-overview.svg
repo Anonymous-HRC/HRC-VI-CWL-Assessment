@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 460" role="img" aria-labelledby="title desc">
+  <title id="title">Vision-based cognitive workload assessment framework</title>
+  <desc id="desc">RGB-D sensing, scene understanding, attention modeling, temporal fusion, and cognitive workload output.</desc>
+  <rect width="960" height="460" rx="28" fill="#f4f4f5"/>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#bfdbfe"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <text x="480" y="54" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#27272a">Vision-based Cognitive Workload Assessment</text>
+  <g font-family="Arial, sans-serif" filter="url(#shadow)">
+    <g transform="translate(50 125)">
+      <rect width="150" height="110" rx="18" fill="#ffffff"/>
+      <text x="75" y="42" text-anchor="middle" font-size="18" font-weight="700" fill="#27272a">RGB-D</text>
+      <text x="75" y="69" text-anchor="middle" font-size="15" fill="#52525b">vision stream</text>
+    </g>
+    <g transform="translate(250 125)">
+      <rect width="150" height="110" rx="18" fill="url(#g)"/>
+      <text x="75" y="38" text-anchor="middle" font-size="18" font-weight="700" fill="#1e3a8a">Scene</text>
+      <text x="75" y="65" text-anchor="middle" font-size="15" fill="#1e40af">human/object</text>
+      <text x="75" y="87" text-anchor="middle" font-size="15" fill="#1e40af">state</text>
+    </g>
+    <g transform="translate(450 125)">
+      <rect width="150" height="110" rx="18" fill="#ffffff"/>
+      <text x="75" y="38" text-anchor="middle" font-size="18" font-weight="700" fill="#27272a">Attention</text>
+      <text x="75" y="65" text-anchor="middle" font-size="15" fill="#52525b">visual-action</text>
+      <text x="75" y="87" text-anchor="middle" font-size="15" fill="#52525b">alignment</text>
+    </g>
+    <g transform="translate(650 125)">
+      <rect width="150" height="110" rx="18" fill="url(#g)"/>
+      <text x="75" y="38" text-anchor="middle" font-size="18" font-weight="700" fill="#1e3a8a">Temporal</text>
+      <text x="75" y="65" text-anchor="middle" font-size="15" fill="#1e40af">fusion</text>
+      <text x="75" y="87" text-anchor="middle" font-size="15" fill="#1e40af">model</text>
+    </g>
+    <g transform="translate(390 310)">
+      <rect width="180" height="82" rx="18" fill="#27272a"/>
+      <text x="90" y="34" text-anchor="middle" font-size="17" font-weight="700" fill="#ffffff">Workload</text>
+      <text x="90" y="58" text-anchor="middle" font-size="15" fill="#e4e4e7">assessment</text>
+    </g>
+  </g>
+  <g stroke="#71717a" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M205 180H245"/>
+    <path d="M405 180H445"/>
+    <path d="M605 180H645"/>
+    <path d="M725 240C725 300 610 345 574 350"/>
+    <path d="M525 240C525 270 510 292 492 306"/>
+  </g>
+</svg>

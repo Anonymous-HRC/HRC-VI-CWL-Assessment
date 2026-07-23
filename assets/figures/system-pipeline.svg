@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 360" role="img" aria-labelledby="title desc">
+  <title id="title">System pipeline</title>
+  <desc id="desc">Pipeline from sensing to workload estimation.</desc>
+  <rect width="920" height="360" rx="22" fill="#ffffff"/>
+  <g font-family="Arial, sans-serif">
+    <text x="460" y="44" text-anchor="middle" font-size="24" font-weight="700" fill="#27272a">System Pipeline</text>
+    <g fill="#dbeafe" stroke="#93c5fd" stroke-width="2">
+      <rect x="40" y="120" width="140" height="88" rx="16"/>
+      <rect x="220" y="120" width="140" height="88" rx="16"/>
+      <rect x="400" y="120" width="140" height="88" rx="16"/>
+      <rect x="580" y="120" width="140" height="88" rx="16"/>
+      <rect x="760" y="120" width="120" height="88" rx="16"/>
+    </g>
+    <g fill="#1e3a8a" font-size="16" font-weight="700" text-anchor="middle">
+      <text x="110" y="157">RGB-D</text>
+      <text x="110" y="181">capture</text>
+      <text x="290" y="157">Feature</text>
+      <text x="290" y="181">encoding</text>
+      <text x="470" y="157">Action</text>
+      <text x="470" y="181">state</text>
+      <text x="650" y="157">Attention</text>
+      <text x="650" y="181">metrics</text>
+      <text x="820" y="157">CWL</text>
+      <text x="820" y="181">score</text>
+    </g>
+    <g stroke="#71717a" stroke-width="3" fill="none" stroke-linecap="round">
+      <path d="M184 164h32"/>
+      <path d="M364 164h32"/>
+      <path d="M544 164h32"/>
+      <path d="M724 164h32"/>
+    </g>
+    <text x="460" y="270" text-anchor="middle" font-size="15" fill="#52525b">
+      Relative paths and static assets keep the page portable for anonymous GitHub Pages deployment.
+    </text>
+  </g>
+</svg>

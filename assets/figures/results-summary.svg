@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 440" role="img" aria-labelledby="title desc">
+  <title id="title">Results summary</title>
+  <desc id="desc">Placeholder validation and comparison charts for cognitive workload assessment.</desc>
+  <rect width="920" height="440" rx="24" fill="#f4f4f5"/>
+  <g font-family="Arial, sans-serif">
+    <text x="460" y="54" text-anchor="middle" font-size="26" font-weight="700" fill="#27272a">Validation and Comparison Results</text>
+    <rect x="70" y="95" width="360" height="275" rx="18" fill="#ffffff"/>
+    <rect x="490" y="95" width="360" height="275" rx="18" fill="#ffffff"/>
+    <text x="250" y="130" text-anchor="middle" font-size="17" font-weight="700" fill="#27272a">Workload validation</text>
+    <text x="670" y="130" text-anchor="middle" font-size="17" font-weight="700" fill="#27272a">Condition comparison</text>
+    <g stroke="#a1a1aa" stroke-width="2">
+      <path d="M120 310h260M120 170v140"/>
+      <path d="M540 310h260M540 170v140"/>
+    </g>
+    <path d="M125 286C165 270 185 240 225 232C270 223 298 182 378 174" stroke="#2563eb" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M125 294C170 282 205 256 250 246C300 235 330 205 378 196" stroke="#94a3b8" stroke-width="4" fill="none" stroke-linecap="round" stroke-dasharray="7 8"/>
+    <rect x="575" y="240" width="48" height="70" rx="6" fill="#bfdbfe"/>
+    <rect x="645" y="205" width="48" height="105" rx="6" fill="#93c5fd"/>
+    <rect x="715" y="178" width="48" height="132" rx="6" fill="#2563eb"/>
+    <g fill="#52525b" font-size="13" text-anchor="middle">
+      <text x="600" y="334">Low</text>
+      <text x="670" y="334">Med</text>
+      <text x="740" y="334">High</text>
+    </g>
+    <text x="250" y="400" text-anchor="middle" font-size="14" fill="#52525b">Replace with manuscript-consistent quantitative validation.</text>
+    <text x="670" y="400" text-anchor="middle" font-size="14" fill="#52525b">Replace with condition-level analysis and error bars.</text>
+  </g>
+</svg>
