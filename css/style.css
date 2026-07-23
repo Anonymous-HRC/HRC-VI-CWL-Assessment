@@ -62,7 +62,6 @@ a:hover {
   text-decoration: underline;
 }
 
-.page-header,
 main > section,
 footer {
   width: min(var(--content-width), calc(100% - 3rem));
@@ -70,6 +69,8 @@ footer {
 }
 
 .page-header {
+  width: min(72rem, calc(100% - 3rem));
+  margin-inline: auto;
   padding: 4rem 0 2rem;
   text-align: center;
 }
@@ -83,8 +84,9 @@ h3 {
 
 h1 {
   margin: 0 0 1.75rem;
-  font-size: clamp(2.4rem, 7vw, 4.75rem);
+  font-size: clamp(2.1rem, 4.2vw, 3.6rem);
   font-weight: 500;
+  line-height: 1.15;
 }
 
 h2 {
