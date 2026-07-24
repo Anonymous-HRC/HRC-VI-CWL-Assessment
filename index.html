@@ -218,21 +218,56 @@
 
       <section id="results">
         <h2>Results</h2>
-        <p>
-          Supplementary result figures summarize workload validation,
-          condition-level comparisons, and quantitative analysis. Values shown
-          here are placeholders for the anonymous project page and should be
-          replaced with manuscript-consistent results before submission.
-        </p>
-        <figure class="figure-card">
-          <img
-            src="assets/figures/results-summary.svg"
-            alt="Summary of validation and comparison results for cognitive workload assessment."
-          />
-          <figcaption>
-            Result summary layout for validation and comparison analyses.
-          </figcaption>
-        </figure>
+        <div class="tabs" data-tabs>
+          <div class="tab-list" role="tablist" aria-label="Result views">
+            <button class="tab-trigger active" type="button" data-tab="nasa-tlx">
+              NASA-TLX
+            </button>
+            <button class="tab-trigger" type="button" data-tab="questionnaire">
+              Custom Questionnaire
+            </button>
+            <button class="tab-trigger" type="button" data-tab="asd-ohd">
+              ASD &amp; OHD
+            </button>
+            <button class="tab-trigger" type="button" data-tab="vi-cwl-ecg">
+              VI-CWL vs ECG
+            </button>
+          </div>
+
+          <div class="tab-panel active" data-panel="nasa-tlx">
+            <img
+              src="assets/figures/results/nasa-tlx.png"
+              alt="NASA-TLX subjective workload scores across three experiments."
+            />
+          </div>
+
+          <div class="tab-panel" data-panel="questionnaire">
+            <img
+              src="assets/figures/results/custom-questionnaire.png"
+              alt="Customized questionnaire scores for the evaluated cognitive workload indicators."
+            />
+          </div>
+
+          <div class="tab-panel" data-panel="asd-ohd">
+            <div class="tab-image-grid">
+              <img
+                src="assets/figures/results/asd.png"
+                alt="ASD trends over time under three experimental conditions."
+              />
+              <img
+                src="assets/figures/results/ohd.png"
+                alt="OHD trends over time under three experimental conditions."
+              />
+            </div>
+          </div>
+
+          <div class="tab-panel" data-panel="vi-cwl-ecg">
+            <img
+              src="assets/figures/results/vi-cwl-vs-ecg.png"
+              alt="Comparison between the VI-CWL output and the ECG-derived baseline."
+            />
+          </div>
+        </div>
       </section>
 
       <section id="implementation">

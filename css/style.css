@@ -253,6 +253,13 @@ main {
   display: block;
 }
 
+.tab-image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 1rem;
+}
+
 .math-block {
   overflow-x: auto;
 }
@@ -306,5 +313,9 @@ footer {
   .overview-content,
   .tab-panel {
     padding: 1rem;
+  }
+
+  .tab-image-grid {
+    grid-template-columns: 1fr;
   }
 }
